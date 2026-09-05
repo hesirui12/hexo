@@ -19,7 +19,7 @@ git init --bare
 
 Git greeted me with a wall of friendly hints about `master` vs `main` (see screenshot below), but the repo was initialized just fine:
 
-![Initializing the bare repo on the server](image/905/Screenshot%20From%202026-09-01%2019-34-10.png)
+![Initializing the bare repo on the server](/image/905/Screenshot%20From%202026-09-01%2019-34-10.png)
 
 That `branches  config  description  HEAD  hooks  info  objects  refs` listing always feels satisfying — like the repo is saying "I'm ready, push me."
 
@@ -36,7 +36,7 @@ git push --set-upstream origin master
 
 It took a bit — 809 objects, about 10 MiB, crawling up at ~198 KiB/s — but it worked:
 
-![First successful push to the server](image/905/Screenshot%20From%202026-09-01%2019-44-00.png)
+![First successful push to the server](/image/905/Screenshot%20From%202026-09-01%2019-44-00.png)
 
 Seeing `* [new branch] master -> master` never gets old. There was a harmless warning about Git LFS locking API not being supported, which I can safely ignore (or disable with `lfs.<url>.lfslockverify false` if it gets annoying).
 
@@ -44,7 +44,7 @@ Seeing `* [new branch] master -> master` never gets old. There was a harmless wa
 
 The app needs a database, so next I installed PostgreSQL on the server and created a `didiwords` database for the project. To make my life easier, I connected to it from my laptop with pgAdmin instead of fumbling around in `psql` all the time:
 
-![pgAdmin connected to the didiwords database](image/905/Screenshot%20From%202026-09-02%2011-56-20.png)
+![pgAdmin connected to the didiwords database](/image/905/Screenshot%20From%202026-09-02%2011-56-20.png)
 
 Look at that — server "Didi", database "didiwords", dashboard showing live sessions. It's alive!
 
